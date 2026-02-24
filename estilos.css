@@ -1,0 +1,73 @@
+  ion-menu::part(backdrop) {
+      background-color: rgba(35, 35, 34, 0.788);
+  }
+
+  ion-menu::part(container) {
+      border-radius: 0 10px 10px 0;
+      box-shadow: 4px 0px 16px rgba(6, 20, 68, 0.395);
+  }
+
+  ion-range::part(pin) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(255, 229, 31);
+      color: #ff0000;
+      font-weight: 700;
+      border-radius: 50%;
+      transform: scale(1.01);
+      top: -20px;
+      min-width: 30px;
+      height: 30px;
+      transition: transform 120ms ease, background 120ms ease;
+  }
+
+  ion-range::part(pin)::before {
+      content: none;
+  }
+
+  ion-range::part(knob) {
+      background: #3610f4;
+  }
+
+  ion-range::part(bar) {
+      background: #9da1a6;
+  }
+
+  ion-range::part(bar-active) {
+      background: #4d1ee5;
+  }
+
+  ion-range::part(tick) {
+      background: #9da1a6;
+  }
+
+  ion-datetime {
+      --background-rgb: none;
+      border-radius: 8px;
+      background-color: #fff;
+  }
+
+  ion-card img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #map {
+      height: 540px;
+  }
+
+  ion-select {
+      --border-style: none;
+      --box-shadow: none;
+  }
+
+  #itemCalendario {
+      --background-activated: transparent !important;
+      --ripple-color: transparent !important;
+      box-shadow: none !important;
+      transition: none !important;
+  }
+
+
