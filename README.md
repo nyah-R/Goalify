@@ -1,26 +1,28 @@
 # Goalify 🎯
 
-Aplicación web de gestión de metas personales desarrollada como proyecto individual 
-para la materia **Taller de Dispositivos Móviles** de la carrera **Analista en 
-Tecnologías de la Información** (ORT Uruguay) — Segundo semestre.
+Personal goal management web app developed as an individual project for the
+**Mobile Devices Workshop** course — **IT Analysis** program (ORT Uruguay), Second semester.
 
-## Descripción
-Goalify permite a los usuarios registrarse, iniciar sesión y gestionar sus metas 
-personales mediante autoevaluaciones diarias. La app incluye un listado filtrable 
-de evaluaciones, un informe resumen y un mapa interactivo con la distribución 
-geográfica de los usuarios registrados.
+## Description
 
-## Funcionalidades
-- Registro e inicio de sesión de usuarios
-- Autoevaluación diaria de objetivos con calificación y fecha
-- Listado de evaluaciones con filtros (todo, último mes, última semana)
-- Informe resumen de rendimiento
-- Mapa interactivo con ubicación de usuarios por país
+Goalify allows users to register, log in, and manage their personal goals through
+daily self-assessments. The app includes a filterable evaluation list, a summary
+report, and an interactive map showing the geographic distribution of registered users.
 
-## Tecnologías
+## Features
+
+- User registration and login
+- Daily goal self-assessment with rating and date
+- Evaluation list with filters (all, last month, last week)
+- Performance summary report
+- Interactive map with user location by country
+
+## Tech Stack
+
 - HTML, CSS, JavaScript
 - Ionic Framework
 - Leaflet.js
 
-## Autor
-Nyah Rüting — Analista en Tecnologías de la Información, ORT Uruguay
+## Author
+
+Nyah Rüting — IT Analysis, ORT Uruguay
