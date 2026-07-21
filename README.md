@@ -4,7 +4,7 @@ A mobile-first web app for personal goal tracking with daily self-assessments. U
 
 > Built as an individual project for **Mobile Devices Workshop** — IT Analysis, ORT Uruguay.
 
-**[Live demo →](https://nyah-r.github.io/Goalify/)**
+**[→ Live demo](https://nyah-r.github.io/Goalify/)**
 
 ---
 
@@ -62,25 +62,3 @@ Single-page app structured around Ionic's tab navigation. All state is managed i
 - Leaflet markers are generated dynamically from the registered users' country field using hardcoded country coordinates
 - No build step — runs directly in the browser, deployed via GitHub Pages
 
----
-
-## How to Run
-
-Open the [live demo](https://nyah-r.github.io/Goalify/) — no installation needed.
-
-Or run locally:
-
-```bash
-git clone https://github.com/nyah-R/Goalify.git
-cd Goalify
-# open index.html in a browser, or serve with any static server:
-npx serve .
-```
-
----
-
-## Author
-
-**Nyah Rüting** — [github.com/nyah-R](https://github.com/nyah-R)
-
-ORT Uruguay — IT Analysis
