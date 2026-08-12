@@ -12,7 +12,6 @@ Una aplicación web **mobile-first** para el seguimiento de objetivos personales
 
 <p align="center">
   <img src="img/screenshot-login.png" width="22%"/>
-  <img src="img/screenshot-register.png" width="22%"/>
   <img src="img/screenshot-assessment.png" width="22%"/>
   <img src="img/screenshot-list.png" width="22%"/>
 </p>
@@ -26,7 +25,7 @@ Una aplicación web **mobile-first** para el seguimiento de objetivos personales
 
 ## Funcionalidades
 
-* **Registro e inicio de sesión**: aislamiento de los datos de cada usuario mediante `localStorage`
+* **Registro e inicio de sesión**: cada usuario mantiene sus propios objetivos y evaluaciones mediante `localStorage`
 * **Gestión de objetivos**: creación y categorización de objetivos personales
 * **Autoevaluación diaria**: valoración de cada objetivo de -5 (muy mal) a 5 (excelente), con selector de fecha
 * **Lista de evaluaciones**: filtrado por todo el período, último mes o última semana; permite eliminar evaluaciones individuales
@@ -35,14 +34,16 @@ Una aplicación web **mobile-first** para el seguimiento de objetivos personales
 
 ---
 
-## Tecnologías utilizadas
+### Tecnologías utilizadas
 
-|                     |                              |
-| ------------------- | ---------------------------- |
-| **Framework de UI** | Ionic (web components)       |
-| **Mapa**            | Leaflet.js                   |
-| **Almacenamiento**  | `localStorage` (sin backend) |
-| **Lenguajes**       | HTML · CSS · JavaScript      |
+| Tecnología       | Uso                                     |
+| ---------------- | --------------------------------------- |
+| **Ionic**        | Componentes y estructura de la interfaz |
+| **Leaflet.js**   | Mapa interactivo                        |
+| **localStorage** | Almacenamiento de datos en el navegador |
+| **HTML**         | Estructura de la aplicación             |
+| **CSS**          | Estilos y diseño visual                 |
+| **JavaScript**   | Lógica y funcionalidades                |
 
 ---
 
