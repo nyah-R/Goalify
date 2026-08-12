@@ -1,14 +1,14 @@
 # Goalify
 
-A mobile-first web app for personal goal tracking with daily self-assessments. Users register goals, rate their daily progress on a -5 to 5 scale, and track performance over time through a filterable evaluation list, a summary report, and an interactive map showing the geographic distribution of registered users.
+Una aplicación web **mobile-first** para el seguimiento de objetivos personales mediante autoevaluaciones diarias. Los usuarios pueden registrar objetivos, valorar su progreso diario en una escala de **-5 a 5** y consultar su rendimiento a lo largo del tiempo mediante una lista de evaluaciones filtrable, un informe resumen y un mapa interactivo que muestra la distribución geográfica de los usuarios registrados.
 
-> Built as an individual project for **Mobile Devices Workshop** — IT Analysis, ORT Uruguay.
+> Proyecto individual realizado para **Taller de Dispositivos Móviles** (2° semestre) - Analista en Tecnologías de la Información, ORT Uruguay.
 
-**[→ Live demo](https://nyah-r.github.io/Goalify/)**
+[**→ Demo online**](https://nyah-r.github.io/Goalify/)
 
 ---
 
-## Screenshots
+## Capturas de pantalla
 
 <p align="center">
   <img src="img/screenshot-login.png" width="22%"/>
@@ -16,6 +16,7 @@ A mobile-first web app for personal goal tracking with daily self-assessments. U
   <img src="img/screenshot-assessment.png" width="22%"/>
   <img src="img/screenshot-list.png" width="22%"/>
 </p>
+
 <p align="center">
   <img src="img/screenshot-report.png" width="22%"/>
   <img src="img/screenshot-map.png" width="22%"/>
@@ -23,42 +24,35 @@ A mobile-first web app for personal goal tracking with daily self-assessments. U
 
 ---
 
-## Features
+## Funcionalidades
 
-- **User registration & login** — per-user data isolation via localStorage
-- **Goal management** — create and categorize personal goals
-- **Daily self-assessment** — rate each goal from -5 (very bad) to 5 (excellent) with a date picker
-- **Evaluation list** — filterable by all time, last month, or last week; delete individual entries
-- **Performance report** — total assessments, average score, and today's score
-- **User map** — interactive Leaflet map showing registered users by country
-
----
-
-## Tech Stack
-
-| | |
-|---|---|
-| UI Framework | Ionic (web components) |
-| Map | Leaflet.js |
-| Storage | localStorage (no backend) |
-| Languages | HTML · CSS · JavaScript |
-| Deployment | GitHub Pages |
+* **Registro e inicio de sesión**: aislamiento de los datos de cada usuario mediante `localStorage`
+* **Gestión de objetivos**: creación y categorización de objetivos personales
+* **Autoevaluación diaria**: valoración de cada objetivo de -5 (muy mal) a 5 (excelente), con selector de fecha
+* **Lista de evaluaciones**: filtrado por todo el período, último mes o última semana; permite eliminar evaluaciones individuales
+* **Informe de rendimiento**: cantidad total de evaluaciones, puntuación promedio y puntuación del día actual
+* **Mapa de usuarios**: mapa interactivo de Leaflet que muestra los usuarios registrados según su país
 
 ---
 
-## Architecture
+## Tecnologías utilizadas
 
-Single-page app structured around Ionic's tab navigation. All state is managed in `localStorage` — no server, no database.
+|                     |                              |
+| ------------------- | ---------------------------- |
+| **Framework de UI** | Ionic (web components)       |
+| **Mapa**            | Leaflet.js                   |
+| **Almacenamiento**  | `localStorage` (sin backend) |
+| **Lenguajes**       | HTML · CSS · JavaScript      |
 
+---
+
+## Arquitectura
+
+Aplicación de una sola página estructurada mediante la navegación por pestañas de Ionic.
+
+```text
+├── index.html        # Estructura principal, pestañas de Ionic y marcado de las páginas
+├── main.js           # Toda la lógica: autenticación, CRUD de objetivos, evaluaciones, mapa e informes
+├── estilos.css       # Estilos personalizados sobre los estilos predeterminados de Ionic
+└── img/              # Imágenes y capturas de pantalla de la aplicación
 ```
-├── index.html        # App shell, Ionic tabs, all page markup
-├── main.js           # All logic: auth, goal CRUD, assessments, map init, reports
-├── estilos.css       # Custom styles on top of Ionic defaults
-└── img/              # App images and screenshots
-```
-
-**Key decisions:**
-- Each user's goals and assessments are stored as separate JSON arrays in localStorage, keyed by username
-- Leaflet markers are generated dynamically from the registered users' country field using hardcoded country coordinates
-- No build step — runs directly in the browser, deployed via GitHub Pages
-
